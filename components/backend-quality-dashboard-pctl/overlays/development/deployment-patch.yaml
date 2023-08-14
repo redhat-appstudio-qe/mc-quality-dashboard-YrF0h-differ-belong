@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-pctl
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-ghqz-tenant/mc-quality-dashboard/backend-quality-dashboard-pctl@sha256:7e9c1e750bd302d8e1fe5594f897415062736b2ccfb9f10b7b82d3c1f3b512a2
+        name: container-image
+        resources: {}
+status: {}
